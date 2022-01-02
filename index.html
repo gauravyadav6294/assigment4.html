@@ -1,0 +1,41 @@
+// code-1. Factorial of a number input is 5.factorial of 5->5*4*3*2*1factorial of 7 -> 7 * 6 * 5 * 4 * 3 * 2 * 1 -> Take n from the user and alert the factorial of that number.
+
+var n=prompt("enter a number");
+n=parseInt(n);
+var fact=1;
+
+for(var i=1;i<=n;i++){
+    fact=fact*i;
+    console.log(fact);
+    break;
+
+}
+
+// code-2. Take n from the user and print first n primenumbers.
+
+var n=prompt("enter a number");
+n=parseInt(n);
+
+for(var i=2;i<n;i=i+1){
+    if(n%i!=0){
+        alerrt(i);
+        break;
+    }
+}
+
+
+// code-3. Write a program to check the given number is a perfect square or not!
+
+    
+var num =parseInt(prompt('Enter the number to check perfect square or not'));
+var squareroot = Math.sqrt(num);
+var i= Math.floor(squareroot);
+if(i*i== num)
+{
+ alert("Number is a perfect square");
+}
+else
+{
+alert("Number is not a perfect square");
+}
+   
